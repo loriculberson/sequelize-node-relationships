@@ -1,0 +1,21 @@
+Plan what you are building
+- figure out what models are needed and their relationships
+
+
+Basic App Set up
+1. create package.json - npm init -y
+  - dependencies: dotenv, sequelize, mysql2, express
+  - devDependency: nodemon, (jest)
+2. make directories: 
+  routes, db, config, (tests)
+3. create files:
+  .env, .gitignore, server.js
+
+Building the routes
+TODO: determine what routes are needed
+
+Specifics for the App
+- create models
+  - User, Profile, Post
+
+TODO: Add data to dbls
