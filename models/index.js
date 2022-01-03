@@ -6,12 +6,16 @@ User.hasOne(Profile, {
   onDelete: "cascade",
 })
 
-Profile.belongsTo(User);
-
-User.hasMany(Post, {
-  onDelete: "cascade",
+Profile.belongsTo(User, {
+  foreignKey: 'user_id'
 });
 
-Post.belongsTo(User);
+User.hasMany(Post, {
+  onDelete: "cascade"
+});
+
+Post.belongsTo(User, {
+  foreignKey: 'user_id'
+});
 
 module.exports = { User, Profile, Post }
