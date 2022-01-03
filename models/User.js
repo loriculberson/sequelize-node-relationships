@@ -9,7 +9,8 @@ const sequelize = require('../config/connection');
       },
     },
     {
-      freezeTableName: true
+      freezeTableName: true,
+      underscored: true
     }
   );
 
